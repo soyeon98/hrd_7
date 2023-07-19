@@ -1,0 +1,38 @@
+
+스프링 환경 설정
+
+스프링부트 프로젝트 버전 2.7.13
+자바 11
+톰캣 9.0
+
+JAVA_HOME
+CLASSPATH
+CATALINA_HOME
+path
+%JAVA_HOME%\bin
+%CATALINA_HOME%\bin
+
+자바 버전별
+open jdk
+
+톰캣 버전별
+tomcat
+
+http://localhost:8080/
+
+
+인덱스 페이지
+링크
+로그인/ 로그아웃
+
+뷰 탬플릿 view template
+1.login.mustache 리턴 login 겟맵핑 "/login.do"
+2.logout.mustache 리턴 logout 겟맵핑 "/logout.do"
+
+컨트롤러(메서드(loginMethod(){})=>맵핑()"/login.do=>웹페이지를 띄운다)
+controller 패키지 생성 => 메서드 생성
+UserController
+
+맵핑 이름 ("/login.do")
+리턴 login
+

@@ -1,0 +1,25 @@
+#page404{
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background: url(../images/다운로드.jpg) no-repeat 50% 50% ;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    .title{
+        width: 100%;
+        display: flex;
+        h1{
+            width: 100%;
+            padding: 100px 0 0 0;
+            justify-content: center;
+            text-align: center;
+            font-size: 100px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+    }
+}

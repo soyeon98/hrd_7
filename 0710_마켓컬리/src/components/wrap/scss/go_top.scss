@@ -1,0 +1,17 @@
+#goTop{
+    position: fixed;
+    width: 58px;
+    height: 58px;
+    bottom: -60px;
+    right: 40px;
+    z-index: 4;
+    transition: all 0.2s;
+    a{
+        width: 100%;
+        display: inline-block;
+        img{
+            width: 100%;
+         
+        }
+    }
+}

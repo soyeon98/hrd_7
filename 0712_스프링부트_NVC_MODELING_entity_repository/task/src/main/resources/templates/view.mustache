@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/write.css">
+</head>
+<body>
+<header id="header">
+    <nav id="nav">
+            <span class="left">
+                <a href="./index.html">HOME</a>
+            </span>
+        <span class="right">
+                <a href="./writeForm.do">WRITE</a>
+            </span>
+    </nav>
+</header>
+<div id="write">
+    <div class="container">
+        <div class="title">
+            <h2>Form Mail</h2>
+        </div>
+        <form action="view.do" name="writeForm" id="writeForm">
+            <ul>
+                <li>{{userName}}</li>
+                <li>{{userHp}}</li>
+                <li>{{userEmail}}</li>
+                <li>{{userSubject}}</li>
+                <li>{{userContents}}</li>
+            </ul>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

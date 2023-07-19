@@ -1,0 +1,51 @@
+
+로그인 구현 
+
+데이터 베이스 생성 : bbs
+
+1 테이블 생성 : user, bbs
+user 테이블
+
+create table user(
+    userId VARCHAR(16) NOT NULL,
+    userPw VARCHAR(16) NOT NULL,
+    userName VARCHAR(30) NOT NULL,
+    userEmail VARCHAR(250),
+    PRIMARY KEY(userId)
+);
+ 더미데이터
+insert into user (userId,userPw,userName,userEmail) values
+("soyeon98","980317","박소연","212psy@naver.com"),
+("aldusdl","980312","박미연","aldusdkdk@naver.com"),
+("rlaalswn","980308","김민주","alawndn@naver.com"),
+("tngusdl","981030","이수현","tngusld@naver.com"),
+("rladbwjd","990217","김유정","dbwjdwjd@naver.com"),
+("tnwlswls","990123","한수진","gkstnwls@naver.com"),
+("gkdysldl","980410","이하연","dlgkdus@naver.com");
+
+2 프로젝트 생성 - eclipse
+- 톰캣서버연동
+- 서버 등록(프로젝트 bbs)
+
+3 WEBAPP
+-index.jsp 만들고 테스트 실행 후 브라우저에 띄우기
+
+4 자바빈즈(DTO) 생성
+    userId,userPw,userName,userEmail -dto파일 source 에 게터세터 있음
+
+5 JDBC => JDBC드라이버.jar 복붙
+    - 서버 다시 실행
+
+6 JDBC드라이버.jar 등록 설정
+    - 프로젝트 우클릭 -> buildpath -> configure build path -> library -> add jar -> jdbc 파일 선택 -> apply
+
+7. UserDAO 생성
+    - JDBC URL
+    - DBID
+    - DBPW
+    - forName
+    - connection => 설정
+
+8. 로그인 구현 [컨트롤러]
+    // 로그인 => 아이디, 비밀번호 입력받아서 처리
+	// 1 => 로그인 성공  0=> 비밀번호 불일치  -1 => 아이디 불일치  -2 => 데이터베이스 오류

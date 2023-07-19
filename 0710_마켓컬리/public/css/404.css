@@ -1,0 +1,30 @@
+@charset "UTF-8";
+#page404 {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background: url(../images/다운로드.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+#page404 .title {
+  width: 100%;
+  display: flex;
+}
+#page404 .title h1 {
+  width: 100%;
+  padding: 100px 0 0 0;
+  justify-content: center;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#write .container form{width: 100%;}
+#write .container form ul{width: 100%;}
+#write .container form ul li{width: 100%;padding: 10px 0;}
+#write .container form ul li input{width: 100%;padding: 0 15px;height: 50px;border: 1px solid #ddd; background: #fff;font-size: 16px;}

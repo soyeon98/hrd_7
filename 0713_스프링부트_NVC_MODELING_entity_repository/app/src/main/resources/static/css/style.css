@@ -1,0 +1,9 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./header.css");
+
+#wrap {width: 100vw;height:100vh;display:flex; }
+#wrap .container{width:70%;margin: auto; background: #fff; padding: 100px; text-align: center;}
+#wrap .container .title{font-size: 28px; font-weight: 600;}
+#wrap .container #nav{padding: 50px 0;}
+#wrap .container #nav a{color: #222;font-size: 20px; font-weight: 500; margin: 0 15px;}

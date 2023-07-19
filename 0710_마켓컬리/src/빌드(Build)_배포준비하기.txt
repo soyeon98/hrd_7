@@ -1,0 +1,6 @@
+빌드(Build)_배포준비하기
+
+npm run build
+
+웹사이트 실행
+serve -s build

@@ -1,0 +1,45 @@
+#mainModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    .container{
+        width: 1068px;
+        margin: 260px auto 0 auto;
+        .content{
+            width: 100%;
+            .modal{
+                width: 440px;
+                height: 417.98px+60px;
+                overflow: hidden;
+                border-radius: 6px;
+                background: #fff;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 8px 0px;
+                .img-box{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .button-box{
+                    width: 100%;
+                    height: 60px;
+                    display: flex;
+                    border: 1px solid transparent;
+            
+                    button{
+                        width: 50%;
+                        height: 100%;
+                        background: #fff;
+                        color: #111;
+                        font-size: 16px;
+                        font-weight: 600;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+}

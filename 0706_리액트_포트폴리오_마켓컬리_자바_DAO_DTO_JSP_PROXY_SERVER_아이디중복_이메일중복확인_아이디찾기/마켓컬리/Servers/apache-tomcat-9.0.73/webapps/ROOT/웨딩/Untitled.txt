@@ -1,0 +1,33 @@
+
+
+JSP
+Java Server Page
+웹계발 자바코딩이 포함된 서버사이드 스크립트언어
+
+헤더코딩은 문서시작 위치에
+자바 : 페이지 디렉티브를 --- <%@ %>
+표기한다
+
+속성별 분류방식
+<%@ 
+    page 
+    language="java" 
+    contentType="text/html; charset=UTF-8" 
+    pageEncoding="UTF-8"
+%>
+
+한줄 코딩
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
+페이지 실행은 톰켓(Tomcat)서버가 실행되어야한다.
+1.8(8버젼)
+8.5 9버전
+포트는 기본이 localhost:8080 포트 사용
+포트는 기본이 127.0.0.1:8080 포트 사용
+포트는 기본이 192.168.40.28 포트 사용
+
+skip.jsp
+header.jsp
+main.jsp
+footer.jsp
+go_top.jsp

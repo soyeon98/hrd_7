@@ -1,0 +1,57 @@
+#confirmModal2 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+#confirmModal2 .wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#confirmModal2 .wrap .container {
+  width: 360px;
+  background: #fff;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#confirmModal2 .wrap .container .content {
+  width: 100%;
+}
+#confirmModal2 .wrap .container .content .title-box {
+  width: 100%;
+  padding: 40px 30px;
+}
+#confirmModal2 .wrap .container .content .title-box h1 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  line-height: 120%;
+}
+#confirmModal2 .wrap .container .content .button-box {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  display: flex;
+  background: #ddd;
+}
+#confirmModal2 .wrap .container .content .button-box button {
+  width: 50%;
+  height: 55px;
+  border: 0;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  color: #5f0080;
+  cursor: pointer;
+}
+#confirmModal2 .wrap .container .content .button-box button:first-child {
+  margin: 0 0.5px 0 0;
+}
+#confirmModal2 .wrap .container .content .button-box button:last-child {
+  margin: 0 0 0 0.5px;
+}

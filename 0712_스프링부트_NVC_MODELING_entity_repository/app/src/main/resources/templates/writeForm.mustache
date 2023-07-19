@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/write.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav">
+            <span class="left">
+                <a href="./index.html">HOME</a>
+            </span>
+            <span class="right">
+
+            </span>
+        </nav>
+    </header>
+    <div id="write">
+        <div class="container">
+            <div class="title">
+                <h2>Form Mail</h2>
+            </div>
+            <form action="view.do" name="writeForm" id="writeForm" method="post">
+                <ul>
+                    <li><input type="text" name="userName" id="userName" placeholder="이름을 입력하세요"></li>
+                    <li><input type="text" name="userHp" id="userHp" placeholder="전화번호를 입력하세요"></li>
+                    <li><input type="text" name="userEmail" id="userEmail" placeholder="이메일을 입력하세요"></li>
+                    <li><input type="text" name="userSubject" id="userSubject" placeholder="제목을 입력하세요"></li>
+                    <li><textarea type="text" name="userContents" id="userContents" placeholder="내용을 입력하세요"></textarea></li>
+                </ul>
+                <div class="button">
+                    <button type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
