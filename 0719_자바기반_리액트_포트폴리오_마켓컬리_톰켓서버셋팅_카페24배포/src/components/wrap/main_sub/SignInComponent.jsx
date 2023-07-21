@@ -5,6 +5,7 @@ import axios from 'axios';
 import {ConfirmContext} from '../../../context/ConfirmContext';
 import {GlobalContext} from '../../../context/GlobalContext';
 import {useNavigate}  from 'react-router-dom';
+import cryptoJs from 'crypto-js';
 
 export default function SignInComponent () {
 
@@ -53,7 +54,7 @@ export default function SignInComponent () {
         else {
 
             axios({
-                url:'/kurly/user_signin_action.jsp',
+                url:'/kurly/kurly_user_signin.jsp',
                 method: 'POST',
                 data:{},
                 params: {
@@ -83,14 +84,22 @@ export default function SignInComponent () {
                                 user_id: user_id,
                                 expires: toDay.getTime()
                             }
-                            localStorage.setItem('KURLYUSERLOGIN', JSON.stringify(obj) );                            
+                            // 암호화
+                            let encryption = cryptoJs.AES.encrypt(JSON.stringify(obj),signin.signinKey).toString();
+                         
+                           // 복호화 Decryption
+                           const decryption= cryptoJs.AES.decrypt(encryption,signin.signinKey);
+                           const decryptionData = JSON.parse(decryption.toString(cryptoJs.enc.Utf8));
+                           console.log(decryptionData);
+                           console.log(encryption);
+                            localStorage.setItem('KURLYUSERLOGIN', encryption );                            
                             setSigin({
                                 아이디: user_id,
                                 expires: toDay.getTime()
                             })
                             confirmModalOpen('로그인이 되었습니다.');
                             setTimeout(function(){
-                                window.location.pathname = `/main`;
+                                // window.location.pathname = `/main`;
                             }, 1000); 
                         }
                     } catch (error) {
